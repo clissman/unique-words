@@ -2,135 +2,145 @@
 
 /* Main Areas */
 
-        body {
-            background: rgb(234, 235, 238);
-            color: rgb(49, 49, 53);
-         
-        }
+body {
+    background: rgb(242, 243, 245);
+    color: rgb(49, 49, 53);
+}
 
-        body, textarea, button {
-            font-family: 'Source Sans Pro';
-            letter-spacing: 0.35px;
-            line-height: 1.4;
-            border: 1px solid rgb(221, 223, 231);
-            font-size: 18px;
-        }
+body,
+textarea,
+button {
+    font-family: 'Source Sans Pro';
+    letter-spacing: 0.35px;
+    line-height: 1.4;
+    font-size: 18px;
+}
 
-        .inputArea {
-            display: flex;
-            flex-flow: column;
-            max-width: 600px;
-            margin-left: 64px;
-        }
+.inputArea {
+    display: flex;
+    flex-flow: column;
+    max-width: 600px;
+    margin-left: 64px;
+}
 
-           h1 {
-            color: rgb(54, 57, 65);
-            font-weight: 500;
-            font-size: 36px;
-            font-family: Montserrat;
-        }
-     
-
-        button {
-            max-width: 120px;
-            align-self: flex-end;
-            padding: 10px 24px;
-            margin-top: 20px;
-            background: rgb(10, 17, 24);
-            color: white;
-            border: none;
-            border-radius: 2px;
-            font-family: 'Source Sans Pro';
-            font-weight: 500;
-            font-size: 16px;
-        }
-
-        textarea {
-            padding: 20px;
-            color: rgb(30, 30, 32);
-            min-width: 400px;
-            margin-left: -3px;
-            margin-top: 5px;
-        }
-
-        span {
-           display: block;
-           font-weight: 700;
-           padding: 8px;
-           color: rgb(88, 92, 107);
-           font-family: Montserrat
-       }
-
-       .test {
-           display: flex;
-           flex-flow: wrap;
-       }
-
-       label {
-           display: flex;
-           flex-flow: column wrap;
-           text-transform: uppercase;
-           font-size: 14px;
-           font-weight: 500;
-           margin-top: 32px;
-           font-family: Montserrat;
-     
-       }
-
-       h2 {
-           font-weight: 400;
-           font-size: 20px;
-       }
-
-       h1, h2 {
-           padding: 0;
-           margin: 0;
-       }
-
-            .numberTitle {
-            font-weight: 700;
-            font-size: 1.2em;
-        }
-
-           ol:first-of-type {
-            list-style-type: none;
-            padding: 0 16px 16px 16px;
-
-        }
-
-        /* Lists */
-
-     
-
-        li li {
-            padding: 2px 8px;
-            display: inline-block;
-
-        }
-
-        #wordList {
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 50vw;
-            margin-left: 64px;
-        }
+h1 {
+    color: rgb(54, 57, 65);
+    font-weight: 500;
+    font-size: 36px;
+    font-family: Montserrat;
+}
 
 
+button {
+    align-self: center;
+    padding: 10px 24px;
+    margin-top: 20px;
+    background: rgb(39, 44, 50);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+    font-size: 16px;
+}
 
-        #wordList > li {
-            border: 1px solid rgb(221, 223, 231);
-            margin: 10px 0;
-            background: white;
-   
+#info {
+    margin-top: 6px;
+}
+
+button:hover {
+    background: rgb(50, 53, 56);
+}
+
+textarea {
+    padding: 20px;
+    color: rgb(30, 30, 32);
+    min-width: 400px;
+    margin-left: -3px;
+    margin-top: 5px;
+    border: 1px solid rgb(221, 223, 231);
+}
+
+span {
+    display: block;
+    font-weight: 700;
+    padding: 16px 8px 8px 24px;
+    color: rgb(106, 111, 128);
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.test {
+    display: flex;
+    flex-flow: wrap;
+}
+
+label {
+    display: flex;
+    flex-flow: column wrap;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 32px;
+    font-family: Montserrat;
+
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+h1,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.numberTitle {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+ol:first-of-type {
+    list-style-type: none;
+    padding: 0 16px 16px 16px;
+
+}
+
+/* Lists */
+
+li li {
+    padding: 2px 8px;
+    /* display: inline-block; */
+
+}
+
+#wordList {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 64px;
+    width: 50vw;
+}
+
+#wordList>li {
+    border: 1px solid rgb(221, 223, 231);
+    margin: 10px 0 10px 15px;
+    background: white;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 250px;
+}
 
 
-        }
+ol li ol {
+    /* Most nested */
+    padding: 0;
+    columns: 4 auto;
+    column-gap: 0px;
+}
 
-        ol li ol { /* Most nested */
-            padding: 0;
-
-
-        }
-
-   
+@media screen and (max-width: 890px) {
+    #wordList li {}
+}

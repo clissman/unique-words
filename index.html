@@ -9,13 +9,14 @@
 <body>
     <main class='test'>
         <div class='inputArea'>
-            <h1>Paragraph Organizer</h1>
-            <h2>Enter a paragraph to create a sorted list of unique words.</h2>
+            <h1>Unique Word Sorter</h1>
             <label for="paragraphInput">Enter paragraph text
-                <textarea placeholder="Enter paragraph text to sort here..."id="paragraphInput" cols="15" rows="10"></textarea>
+                <textarea placeholder="Enter paragraph text to sort here..."id="paragraphInput" rows="10"></textarea>
             </label>
-            <div id="info"></div>
-            <button onclick="organizeText()">Create list</button>
+            <div class='controls'>
+                <button onclick="organizeText()">Create list</button>
+                <div id="info"></div>
+            </div>
         </div>
         <ol id='wordList'></ol>
     </main>

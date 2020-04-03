@@ -9,7 +9,7 @@ function organizeText() {
    
     let arr = paragraphs.toLowerCase()
         .replace(/\n/g, " ")
-        .replace(/[^\w\s\'-]/g, "")
+        .replace(/[^\w\s\'\w-\w]/g, "")
         .split(' ')
         .sort()
         .sort((a, b) => a.length - b.length)

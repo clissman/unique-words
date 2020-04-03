@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class='test'>
+        <div class='inputArea'>
+            <h1>Paragraph Organizer</h1>
+            <h2>Enter a paragraph to create a sorted list of unique words.</h2>
+            <label for="paragraphInput">Enter paragraph text
+                <textarea placeholder="Enter paragraph text to sort here..."id="paragraphInput" cols="15" rows="10"></textarea>
+            </label>
+            <button onclick="organizeText()">Organize</button>
+        </div>
+        <ol id='wordList'></ol>
+    </main>
+<script src="ss.js"></script>
+</body>
+</html>
